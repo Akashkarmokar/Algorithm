@@ -34,3 +34,5 @@ int main()
     }    
     return 0;
 }
+
+//Problem Link : Uva = 543,686,10394,10533.
