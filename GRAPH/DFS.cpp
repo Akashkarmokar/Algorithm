@@ -12,10 +12,10 @@ int scc = 0 ; //strong ly connected component
 void dfsvisite(int x)
 {
     color[x]=gray;
-    cout<<x<<" is gray "<<endl;
+    //cout<<x<<" is gray "<<endl;
     for(int i = 0 ;i<node;i++)
     {
-        cout<<"adj[x][i] "<<x<<" "<<i<<" "<<adj[x][i]<<" color is: "<<color[i]<<endl;
+        //cout<<"adj[x][i] "<<x<<" "<<i<<" "<<adj[x][i]<<" color is: "<<color[i]<<endl;
         if(adj[x][i]==1)
         {
             if(color[i]==white)
@@ -25,7 +25,7 @@ void dfsvisite(int x)
         }
     }
     color[x]=black;
-    cout<<x<<" is black "<<endl;
+    //cout<<x<<" is black "<<endl;
 }
 void dfs()
 {
@@ -35,10 +35,10 @@ void dfs()
     }
     for(int i = 0 ;i<node; i++)
     {
-        cout<<"DFS push node "<<i<<endl;
+        //cout<<"DFS push node "<<i<<endl;
         if(color[i]==white)
         {
-            cout<<"Node  : "<<i<<" is white"<<endl;
+            //cout<<"Node  : "<<i<<" is white"<<endl;
             scc++;
             dfsvisite(i);
         }
