@@ -71,10 +71,12 @@ int main()
     bfs();
     cout<<"strongly connected component: ";
     cout<<scc<<endl;
+    // Printing nodes starting time and finishing time :
     for(int i = 0 ;i<node;i++)
     {
         cout<<"Node no : "<<i<<" starting time "<<starting_time[i]<<" Finishing time "<<finishing_time[i]<<endl;
     }
+    // Printing The components after topological sort :
     while(!ans.empty())
     {
         cout<<ans.top()<<endl;
