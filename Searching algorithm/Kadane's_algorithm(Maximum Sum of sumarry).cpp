@@ -63,6 +63,7 @@ int main()
     return 0;
 }
 // problem link : https://practice.geeksforgeeks.org/problems/kadanes-algorithm/0
+// UVA : 10684,507
 
 // 2
 // 5
