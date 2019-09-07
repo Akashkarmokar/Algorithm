@@ -49,6 +49,7 @@ int kmp (char *str,char *ptr,int i ){
             if(ptr[ptr_index]=='\0'){
                 printf("Index found at %d position\n",str_index-ptr_index);
                 ptr_index=lps[ptr_index-1];
+                counter++;
             }
         }
         else{
