@@ -1,3 +1,7 @@
+
+// Complexity : O(textSize + PatternSize)
+
+
 #include<iostream>
 #include<cstring>
 #include<stdio.h>
