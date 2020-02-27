@@ -2,7 +2,7 @@
 using namespace std;
 
 // using recursion
-int josephus_recursion(int people,int count_number)
+int josephus_recursion(int people,int count_number) // time complexity : O(n)
 {
 	if(people==1)
 		return 1;
@@ -22,7 +22,7 @@ int main()
 	cout<<"OUtput with loop"<<endl;
 
 	int initial_soward = 1;
-	for(int j=2;j<=people;j++)
+	for(int j=2;j<=people;j++) // time complexity : O(n)
 	{
 		initial_soward = (initial_soward+(count_number-1))%j+1;
 	}
